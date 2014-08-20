@@ -5,14 +5,18 @@
 <head>
   <meta charset="utf-8">
   
-  <title>Paper Review on Compbell and Shiller 1988 | DREAM FACTORY</title>
+  <title>Paper Review on Compbell and Shiller 1988 | DREAM  FACTORY</title>
   <meta name="author" content="Yupeng Wang">
+  
+  <meta name="description" content="Summary
+Findings and methodology
+The main finding of Compbell and Shiller (1988) is that long historical averages of real earnings, representing funda">
   
   
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
   <meta property="og:title" content="Paper Review on Compbell and Shiller 1988"/>
-  <meta property="og:site_name" content="DREAM FACTORY"/>
+  <meta property="og:site_name" content="DREAM  FACTORY"/>
 
   
     <meta property="og:image" content="undefined"/>
@@ -28,7 +32,7 @@
     <link rel="apple-touch-icon-precomposed" href="/img/apple-icon.png">
     
 
-  <link rel="alternate" href="/atom.xml" title="DREAM FACTORY" type="application/atom+xml">
+  <link rel="alternate" href="/atom.xml" title="DREAM  FACTORY" type="application/atom+xml">
   <link rel="stylesheet" href="/css/style.css" media="screen" type="text/css">
 
   <style type="text/css">
@@ -70,7 +74,7 @@ body{ -webkit-animation: bugfix infinite 1s; }
 <body>
   <header id="header" class="inner"><div class="padding">
 	<div class="alignleft logo">
-	  <h1><a href="/">DREAM FACTORY</a></h1>
+	  <h1><a href="/">DREAM  FACTORY</a></h1>
 	</div>
 	<nav id="main-nav" class="alignright">
 		<input type="checkbox" id="toggle" />
@@ -125,7 +129,33 @@ body{ -webkit-animation: bugfix infinite 1s; }
       
       <div class="entry">
         
-          
+          <h1 id="Summary">Summary</h1>
+<h2 id="Findings_and_methodology">Findings and methodology</h2>
+<p>The main finding of Compbell and Shiller (1988) is that long historical averages of real earnings, representing fundamental value of a company, help forecast present values of future real dividends. Note that the forecast period here is infinite. This is different from the method we usually access: to use the parameters of current period to forecast some parameter of the next period, by regressing on lagged variables. One step further, the authors state that the ratio of the stated earnings variable to the current stock price is a powerful predictor of the return on stock, particularly when the return is measured over several years.</p>
+<p>The key argument in this paper is that excess volatility is the same as forecast ability of multiperiod returns. The theoretical basis is the linearized present value model with constant expected real return or excess return derived by Compbell Shiller approximation. The framework of the empirical study is the vector autoregressive (VAR) approach.</p>
+<h2 id="Rationale">Rationale</h2>
+<p><strong>Step 1 Univariate and multivariate regression.</strong><br>The authors regress real (excess) stock returns on some explanatory variables including log dividend price ratio, lagged dividend-growth rate (excess of dividend growth rate over the commercial paper rate), and log earnings-price ratio, by a straightforward multiperiod-regression approach. They find that a very high proportion of multiperiod returns is forecastable using a long moving average of earnings.</p>
+<p><strong>Step 2 Deriving the relationship between the realized log one-period return, the dividend growth rate and the log dividend price ratio theoretically.</strong><br>By Compbell Shiller approximation, they reach a linear expression, and expand it to i-period log return and even infinite. The economic meaning of the approximation is that dividends paid are reinvested not in the stock itself but in an instrument that pays a fixed real return. Repeating the empirical work above, they show that the predictability of approximate returns is close to that of exact returns.</p>
+<p><strong>Step 3 Constructing restrictions for VAR framework.</strong><br>Based on the assumption that expected real one-period stock returns are constant, the log dividend-price ratio can be expressed as a linear function of expected real dividend growth into the infinite future. Another looser assumption is that expected excess returns on stock over some alternative asset are constant. Then changes in interest rates through time could also be considered. The linearity of the relationships developed above provides restrictions to VAR framework.</p>
+<p><strong>Step 4 Detailing VAR framework and Wald tests.</strong><br>A VAR framework is put forward, with log dividend-price ratio, dividend growth rate and log ratio of 30-year average of historical earnings to price as information variables. The VAR estimates show that dividend-price ratio helps to forecast short-run dividend change. If the constant expected return model works, the restrictions must hold. In the limit when the period goes to infinite, the restriction is that the log dividend-price ratio equals to its theoretical counterpart, the unrestricted VAR forecast of the present value of future real dividend growth. Wald tests on these restrictions show that the constant expected return model is rejected, with an increasing rejection power as the length of period for multiperiod return increases. This result is consistent with the empirical results at the very first. </p>
+<p><strong>Step 5 Comparing theoretical and historical stock prices and returns.</strong><br>Plugging δt‘ from unrestricted VAR estimation into the expressions in the second column of the table, we could get theoretical stock prices and returns. Theoretical and historical returns are highly correlated since they are essentially changes in stock prices, which is dominated by the short-run movements, which theoretical and historical dividend price ratio are weakly correlated since they are determined by the levels of stock prices. Also from the expression of theoretical stock prices, we could see that the present value of future real dividend is a weighted average of the moving average of log real earnings and of log real price. Thus, a long moving average of real earnings helps to forecast future real dividends.</p>
+<p><strong>Step 6 Sensitivity analysis and conclusion.</strong><br>They do some sensitivity analysis for their findings and it turns out to be robust. In supplement, they provide some explanations to why the long moving average of real earnings is introduced into the analysis. They think that the earnings variable is very natural to represent fundamental value and there are not many competitors for this role. Once a forecasting variable is found that predicts multiperiod returns, adding new forecasting variables can never make them unforecastable.</p>
+<p><br><br><em>The following is a logic map of this paper:</em></p>
+<p><img src="http://gladysisworkinghard.qiniudn.com/compbell and shiller.png" alt=""></p>
+<h1 id="Comments">Comments</h1>
+<h2 id="Discussion_on_VAR_model">Discussion on VAR model</h2>
+<p>The author aims to illustrate that earning price ratio has the power of predicting the present value of future dividends, by denying the null hypothesis constant earning return. Theoretically, they have found some restrictions between dividend price ratio and dividend growth rate derived by the constant earning return hypothesis. From this point, VAR may bring about better result because the <strong>parameter derived in VAR can be easily tested whether they fit those restrictions</strong>. If not, null hypothesis is vanished apparently. However, <strong>univariate regression revolves multi-hypothesis problem</strong>, it is not convincing to deny null hypothesis based on R square or test statistics. We believe this is the essential advantage of VAR.</p>
+<p>Despite the above reasons, VAR has also got some technical advantages.</p>
+<ul>
+<li>VAR method put different variables in a single regression. It is technically simpler than univariate linear regression.</li>
+<li>VAR does not need to run a regression nor the number of future return or dividend, so there is no need to truncate raw data. However, when you run a linear regression, the last part of data need to be used to compute future return or dividend.</li>
+<li>In this paper, the author use variables such as dividend ratio and dividend growth ratio to predict the present value of all future dividends. VAR approach can achieve this goal by increasing i to infinite in (6) and (7), while univariate regression can hardly predict an infinity variable.</li>
+<li>VAR approach gives us an important predicting variable, theoretical price, which means the present value of all the forecast future dividends. This variable is of great importance for its economic meaning.</li>
+</ul>
+<h2 id="Future_work:_Cross_sectional_test?">Future work: Cross sectional test?</h2>
+<p>Based on the paper’s analysis, we can safely conclude that the present values of future real dividends can be forecasted by historical averages of real earnings. This is a time-series model which mainly focused on past performance in the overall stock market. To further explore the market efficiency, we can conduct a cross-sectional test between various specific type stocks. For example, we can explore how small-caps stock returns are related to large-scale stock returns. We have read from some papers that the large-scale stock may be helpful to predict small-cap stock returns. The result may bring us more insights to test the market efficiency.<br><br></p>
+<p><em>（The End）</em></p>
+
         
       </div>
       <footer>
@@ -139,7 +169,7 @@ body{ -webkit-animation: bugfix infinite 1s; }
           
   
   <div class="tags">
-    <a href="/tags/stock-return-predictability/">stock return predictability</a>
+    <a href="/tags/stock-return-predictability/">stock return predictability</a>, <a href="/tags/dividend-price-ratio/">dividend-price ratio</a>
   </div>
 
           <div class="share">
@@ -219,7 +249,13 @@ body{ -webkit-animation: bugfix infinite 1s; }
 <div class="widget tag">
   <h3 class="title">Tags</h3>
   
+    <a href="/tags/dividend-price-ratio/">dividend-price ratio<small>1</small></a>
+  
     <a href="/tags/stock-return-predictability/">stock return predictability<small>1</small></a>
+  
+    <a href="/tags/stock-return-predictability,-dividend-price-ratio/">stock return predictability, dividend-price ratio<small>0</small></a>
+  
+    <a href="/tags/stock-return-predictability，dividend-price-ratio/">stock return predictability，dividend-price ratio<small>0</small></a>
   
 </div>
 
